@@ -18,89 +18,6 @@
         cursor: pointer;
     }
 }
-//== About Section ::::
-.moduleAbout-2 {
-    .wrapper-video{
-        width: 100%;
-        position: relative;
-        .placeholder{
-            width: 100%;
-        }
-        button{
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            svg{
-                width: 30px;
-                path{
-                    fill: #fff;
-                }
-            }
-        }
-    }
-    .modalvideo{
-        width: 100%;
-        height: 100%;
-        background: rgba( #202020, 0.8);
-        position: fixed;
-        z-index: 103;
-        top: 0;
-        left: 0;
-        display: none;
-        &.open{
-            display: block;
-        }
-        .modal{
-            width: 100%;
-            height: 100%;
-            position: relative;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .wrapper-box{
-                width: 65%;
-                //height: 100%;
-                position: relative;
-                z-index: 2;
-                padding: 15px;
-                display: table;
-                margin: auto;
-                .embedWrapper{
-                    position: relative;
-                    display: block;
-                    height: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    padding-bottom: 56.25%;
-                    iframe{
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                        border: 0;
-                        display: block;
-                        margin: 0 auto;
-                    }
-                }
-            }
-
-            .dumie-box-modal{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 1;
-                top: 0;
-                left: 0;
-            }
-        }
-    }
-}
-//========== /About Section
 
 //== Clients Section ::::
 .moduleClients-1 {
@@ -218,33 +135,6 @@
 }
 //========== /Text Box Section
 
-//== Steps Section ::::
-.moduleSteps-1{
-
-}
-//========== /Steps Section
-
-//== Cards Section ::::
-.moduleCards{
-    .card-box{
-        padding: 0 15px;
-    }
-    .card{
-        padding: 30px;
-        background: #606060;
-        border-radius: 3px;
-        color: #fff;
-        icon{
-            svg{
-                width: 48px;
-            }
-        }
-        h4{
-            color: #fff;
-        }
-    }
-}
-//========== /Cards Section
 
 //== Equipes Section ::::
 .moduleEquipes{

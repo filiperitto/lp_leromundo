@@ -78,13 +78,21 @@ function scrollAnchors(e, respond = null) {
 
 //== Slider Card
 new Glider(document.querySelector('.cards-glider'), {
-    slidesToShow: 2,
+    slidesToShow: 1.2,
     slidesToScroll: 1,
+    scrollLock: false,
     dots: '#dots-cards',
     arrows: {
         prev: '.prev-cards',
         next: '.next-cards'
     },
+    responsive: [{
+        breakpoint: 750,
+        settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 2,
+        }
+    }]
 });
 //======================== /Slider Card
 
