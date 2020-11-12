@@ -2165,6 +2165,7 @@ footer .copy {
   text-align: center;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  z-index: 1;
 }
 
 .btn::after {
@@ -2207,6 +2208,10 @@ footer .copy {
 
 .btn:active::before {
   bottom: 0;
+}
+
+.center {
+  margin: auto;
 }
 
 .glider-next,
