@@ -97,17 +97,6 @@ new Glider(document.querySelector('.cards-glider'), {
 //======================== /Slider Card
 
 
-//== Slider Review
-new Glider(document.querySelector('.swiper-wrapper'), {
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    duration: 2,
-    arrows: {
-        prev: '.prev-review',
-        next: '.next-review'
-    },
-});
-//======================== /Slider Review
 
 
 //== /Accordion Module
@@ -135,14 +124,17 @@ for( let i=0; i<accTitle.length; i++ ){
         if( singleMode ){						
             for(let k=0; k<accTitle.length; k++) {
                 accTitle[k].classList.remove("active");
-            }
+            }			
+
 
             for(let j=0; j<accContent.length; j++) {
                 accContent[j].style.height = 0;
-            }
+            }		
         }
         
         this.classList.add("active");
+        
+        
         
         document.getElementById(openedAcc).style.height = accContent[i].getAttribute("data-height");
         
@@ -152,20 +144,5 @@ for( let i=0; i<accTitle.length; i++ ){
 //======================== /Accordion Module
         
 
-
-//== Waterfall 
-
-(function() {
-    var grid = document.querySelector('.my-grid');
-    
-    document.addEventListener("load", function() {
-        waterfall(grid);
-      }, 1000);
-
-    window.addEventListener('resize', function () {
-        waterfall(grid);
-    });
-})();
-//======================== /Waterfall
 
 

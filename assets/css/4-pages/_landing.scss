@@ -421,6 +421,9 @@ section {
     }
     .glider-wrap {
       overflow: hidden;
+      @include respond-to-min(750){
+          //margin-right: -35%;
+      }
     }
 
     .cards-glider {
@@ -856,3 +859,67 @@ section {
     }
 }
 //========== /About Section
+
+//== Faq Section ::::
+.moduleFaq {
+    background: #fff;
+
+    .title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .accordion{
+        width: 100%;
+        max-width: 970px;
+        margin: auto;
+        .acc-heading{
+            align-items: center;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(0, 109, 174, 0.1);
+            margin-bottom: 30px;
+            padding: 40px;
+            border: none;
+            display: block;
+            transition: all .2s ease-in-out;
+            cursor: default;
+            .header-acc{
+                font-family: Raleway;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px;
+                letter-spacing: 0.5px;
+                text-align: left;
+                color: #222;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+            svg{
+                transition: all .2s ease-in-out;
+            }
+            &.active{
+                box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
+                margin-bottom: 35px;
+                svg{
+                    transform: rotate(180deg);
+                }
+            }
+            .acc-content{
+                .inner{
+                    padding: 0;
+                    p{
+                        margin: 20px 0;
+                        color: #606060;
+                        cursor: auto;
+                    }
+                }
+            }
+
+        }
+    }
+}
+//========== /Faq Section

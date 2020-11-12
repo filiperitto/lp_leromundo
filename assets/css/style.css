@@ -1875,52 +1875,6 @@ MENU HAMBUGER ANIMATION
   width: 100%;
 }
 
-.moduleFaq {
-  background: #CCCCCC;
-}
-
-.moduleFaq .title {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.moduleFaq .cards-faq {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media only screen and (max-width: 700px) {
-  .moduleFaq .cards-faq {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.moduleFaq .cards-faq .column {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 700px) {
-  .moduleFaq .cards-faq .column {
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 700px) {
   #contact {
     margin-top: 70px;
@@ -3118,5 +3072,82 @@ section .subtitle {
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+.moduleFaq {
+  background: #fff;
+}
+
+.moduleFaq .title {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.moduleFaq .accordion {
+  width: 100%;
+  max-width: 970px;
+  margin: auto;
+}
+
+.moduleFaq .accordion .acc-heading {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 109, 174, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 109, 174, 0.1);
+  margin-bottom: 30px;
+  padding: 40px;
+  border: none;
+  display: block;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: default;
+}
+
+.moduleFaq .accordion .acc-heading .header-acc {
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.moduleFaq .accordion .acc-heading svg {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.moduleFaq .accordion .acc-heading.active {
+  -webkit-box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
+          box-shadow: 0px 15px 60px rgba(0, 109, 174, 0.1);
+  margin-bottom: 35px;
+}
+
+.moduleFaq .accordion .acc-heading.active svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner {
+  padding: 0;
+}
+
+.moduleFaq .accordion .acc-heading .acc-content .inner p {
+  margin: 20px 0;
+  color: #606060;
+  cursor: auto;
 }
 /*# sourceMappingURL=style.css.map */

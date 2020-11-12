@@ -595,41 +595,6 @@
 }
 //========== /Blog Section
 
-//== Faq Section ::::
-.moduleFaq {
-    background: $gray;
-
-    .title {
-        width: 100%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    .cards-faq {
-        width: 100%;
-        height: auto;
-        display: flex;
-
-        @include respond-to-max(700) {
-            flex-wrap: wrap;
-        }
-
-        .column {
-            width: 100%;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-
-            @include respond-to-max(700) {
-                width: 100%;
-            }
-        }
-    }
-}
-//========== /Faq Section
-
 //== Contact Section ::::
 #contact {
 
