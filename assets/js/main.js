@@ -102,7 +102,7 @@ new Glider(document.querySelector('.cards-glider'), {
 
 //== Slider Card
 new Glider(document.querySelector('.glider-reviews'), {
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     scrollLock: false,
     arrows: {
