@@ -82,7 +82,6 @@
 .glider-prev{
     width: 43px;
     height: 43px;
-    background: #696969;
     position: relative;
     top: 0;
     display: flex;
@@ -108,6 +107,13 @@
         margin-top: 8px;
         box-shadow: 0px 0 0px rgba(198, 188, 199, 0.3);
         margin-bottom: 0;
+    }
+
+    &.green{
+        background: #59B98A;
+        &:before{
+            color: #fff;
+        }
     }
 }
 .glider-next{
@@ -347,7 +353,16 @@ section {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
-                margin-top: -14%;
+                margin-top: -8%;
+
+                font-family: Oxygen;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+
             }
             .btn{
                 width: 50%;
@@ -858,7 +873,131 @@ section {
         }
     }
 }
-//========== /About Section
+//========== /About Section//== Reviews Section ::::
+.moduleReviewsCards {
+    background: #379FDD;
+    position: relative;
+    .mask{
+        width: 100%;
+        height: 246px;
+        position: absolute;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+    }
+    .text-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        @include respond-to-min(750){
+            width: 30%;
+        }
+        h1{
+            color: #fff;
+            margin-top: 0;
+        }
+        p{
+            color: #fff;
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 3px;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .box-btn-glider{
+            display: flex;
+            height: 100%;
+            align-items: flex-end;
+            .glider-prev,
+            .glider-next{
+                left: auto;
+                right: auto;
+            }
+            .glider-prev{
+                margin-right: 5px;
+            }
+        }
+
+    }
+    .slider-box{
+        width: 100%;
+        @include respond-to-min(750){
+            width: 70%;
+        }
+        .item-box{
+            width: auto;
+            background: #E8F5FD;
+            padding: 45px;
+            border-radius: 3px;
+            margin-left: 20px;
+            .header{
+                width: 100%;
+                display: flex;
+                .thumb-wrap{
+                    width: 80px;
+                    height: 80px;
+                    overflow: hidden;
+                    border-radius: 50px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .text-header{
+                    padding-left: 25px;
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    margin-bottom: 40px;
+                    h4{
+                        font-family: Roboto Condensed;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        text-transform: uppercase;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    p{
+                        margin: 0;
+                        padding: 0;
+                        font-family: DM Sans;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        text-transform: uppercase;
+                    }
+
+                }
+            }
+            .content-box{
+                width: 100%;
+                p{
+                    font-family: DM Sans;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+//========== /Reviews Section
+
+
 
 //== Faq Section ::::
 .moduleFaq {

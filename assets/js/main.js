@@ -99,6 +99,29 @@ new Glider(document.querySelector('.cards-glider'), {
 
 
 
+
+//== Slider Card
+new Glider(document.querySelector('.glider-reviews'), {
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    scrollLock: false,
+    arrows: {
+        prev: '.prev-reviews',
+        next: '.next-reviews'
+    },
+    responsive: [{
+        breakpoint: 750,
+        settings: {
+            // Set to `auto` and provide item width to adjust to viewport
+            slidesToShow: 2,
+        }
+    }]
+});
+//======================== /Slider Card
+
+
+
+
 //== /Accordion Module
 let accTitle = document.getElementsByClassName("acc-heading");
 let accContent = document.getElementsByClassName("acc-content");

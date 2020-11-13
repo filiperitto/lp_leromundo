@@ -810,6 +810,8 @@ body {
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+  position: relative;
+  z-index: 1;
 }
 
 @media only screen and (max-width: 700px) {
@@ -2091,7 +2093,6 @@ footer .copy {
 .glider-prev {
   width: 43px;
   height: 43px;
-  background: #696969;
   position: relative;
   top: 0;
   display: -webkit-box;
@@ -2133,6 +2134,16 @@ footer .copy {
   -webkit-box-shadow: 0px 0 0px rgba(198, 188, 199, 0.3);
           box-shadow: 0px 0 0px rgba(198, 188, 199, 0.3);
   margin-bottom: 0;
+}
+
+.glider-next.green,
+.glider-prev.green {
+  background: #59B98A;
+}
+
+.glider-next.green:before,
+.glider-prev.green:before {
+  color: #fff;
 }
 
 .glider-next:before {
@@ -2400,7 +2411,14 @@ section .subtitle {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  margin-top: -14%;
+  margin-top: -8%;
+  font-family: Oxygen;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .moduleHero.style2 .text-box .btn {
@@ -3072,6 +3090,168 @@ section .subtitle {
   z-index: 1;
   top: 0;
   left: 0;
+}
+
+.moduleReviewsCards {
+  background: #379FDD;
+  position: relative;
+}
+
+.moduleReviewsCards .mask {
+  width: 100%;
+  height: 246px;
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.moduleReviewsCards .text-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleReviewsCards .text-box {
+    width: 30%;
+  }
+}
+
+.moduleReviewsCards .text-box h1 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.moduleReviewsCards .text-box p {
+  color: #fff;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.moduleReviewsCards .text-box .box-btn-glider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.moduleReviewsCards .text-box .box-btn-glider .glider-prev,
+.moduleReviewsCards .text-box .box-btn-glider .glider-next {
+  left: auto;
+  right: auto;
+}
+
+.moduleReviewsCards .text-box .box-btn-glider .glider-prev {
+  margin-right: 5px;
+}
+
+.moduleReviewsCards .slider-box {
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleReviewsCards .slider-box {
+    width: 70%;
+  }
+}
+
+.moduleReviewsCards .slider-box .item-box {
+  width: auto;
+  background: #E8F5FD;
+  padding: 45px;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.moduleReviewsCards .slider-box .item-box .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.moduleReviewsCards .slider-box .item-box .header .thumb-wrap {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.moduleReviewsCards .slider-box .item-box .header .thumb-wrap img {
+  width: 100%;
+}
+
+.moduleReviewsCards .slider-box .item-box .header .text-header {
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.moduleReviewsCards .slider-box .item-box .header .text-header h4 {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.moduleReviewsCards .slider-box .item-box .header .text-header p {
+  margin: 0;
+  padding: 0;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.moduleReviewsCards .slider-box .item-box .content-box {
+  width: 100%;
+}
+
+.moduleReviewsCards .slider-box .item-box .content-box p {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 0;
 }
 
 .moduleFaq {
