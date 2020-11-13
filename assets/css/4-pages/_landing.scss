@@ -564,9 +564,11 @@ section {
             justify-content: center;
             align-items: center;
             order: 3;
+            margin-top: 20px;
             @include respond-to-min(750){
                 width: 30%;
                 order: 1;
+                margin-top: 0;
             }
         }
         .dots-box{
@@ -584,7 +586,7 @@ section {
         .box-btn-glider{
             width: 50%;
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             align-items: center;
             order: 2;
             .glider-next,
@@ -593,6 +595,9 @@ section {
                 left: auto;
                 top: auto;
                 right: auto;
+            }
+            .glider-prev{
+                margin-right: 5px;
             }
             @include respond-to-min(750){
                 width: 30%;
@@ -940,6 +945,10 @@ section {
             display: flex;
             height: 100%;
             align-items: flex-end;
+            justify-content: flex-end;
+            @include respond-to-min(750){
+                justify-content: flex-start;
+            }
             .glider-prev,
             .glider-next{
                 left: auto;
