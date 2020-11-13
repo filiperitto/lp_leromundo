@@ -189,6 +189,11 @@ header {
     .logo {
         margin: 0;
         font-weight: 600;
+        width: 100%;
+        max-width: 320px;
+        img{
+            width: 100%;
+        }
     }
 
     nav {
@@ -347,13 +352,11 @@ section {
                 width: 100%;
             }
             p{
-                width: 47%;
+                width: 100%;
                 color: #303030;
-                margin-left: 15%;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 24px;
-                margin-top: -8%;
 
                 font-family: Oxygen;
                 font-size: 16px;
@@ -362,11 +365,26 @@ section {
                 line-height: 24px;
                 letter-spacing: 0em;
                 text-align: left;
+                margin-top: 0;
+                margin-left: 0;
+
+                @include respond-to-min(750){
+                    width: 47%;
+                    margin-top: -8%;
+                    margin-left: 15%;
+
+                }
 
             }
             .btn{
-                width: 50%;
-                margin-left: 15%;
+                width: 100%;
+                margin-left: 0%;
+
+                @include respond-to-min(750){
+                    width: 50%;
+                    margin-left: 15%;
+
+                }
             }
         }
         .mask{
@@ -607,6 +625,9 @@ section {
     &.second{
         background: url(../img/banner2.jpg) top center;
         background-size: cover;
+        img{
+            width: 100%;
+        }
     }
 }
 //========== /Divider Section
@@ -672,17 +693,22 @@ section {
                     }
                 }
                 .rectangle{
-                    width: 100%;
+                    width: calc(100% + 40px);
                     height: 80%;                
                     background: #59B98A;
                     position: absolute;
                     left: 0;
                     z-index: 0;
+                    margin-left: -20px;
+                    margin-right: -20px;
 
                     transform: skewY(5deg);
                     top: 0;
                     bottom: auto;
                     @include respond-to-min(950){
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
                         bottom: 0;
                         top: auto;
                         height: calc(100% - 95px);  
@@ -762,10 +788,12 @@ section {
     .text-box{
         width: 100%;
         order: 1;
+        margin-bottom: 40px;
         @include respond-to-min(750){
             width: 60%;
             padding: 0 70px;
             order: 2;
+            margin-bottom: 0;
         }
         h1{
             display: inline-block;

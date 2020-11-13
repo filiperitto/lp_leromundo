@@ -968,11 +968,10 @@ h1 icon, h2 icon, h3 icon, h4 icon, h5 icon, h6 icon {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.05;
   letter-spacing: -1px;
   font-family: Oxygen;
-  font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 64px;
@@ -2232,6 +2231,12 @@ header .wrap {
 header .logo {
   margin: 0;
   font-weight: 600;
+  width: 100%;
+  max-width: 320px;
+}
+
+header .logo img {
+  width: 100%;
 }
 
 header nav {
@@ -2405,13 +2410,11 @@ section .subtitle {
 }
 
 .moduleHero.style2 .text-box p {
-  width: 47%;
+  width: 100%;
   color: #303030;
-  margin-left: 15%;
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  margin-top: -8%;
   font-family: Oxygen;
   font-size: 16px;
   font-style: normal;
@@ -2419,11 +2422,28 @@ section .subtitle {
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleHero.style2 .text-box p {
+    width: 47%;
+    margin-top: -8%;
+    margin-left: 15%;
+  }
 }
 
 .moduleHero.style2 .text-box .btn {
-  width: 50%;
-  margin-left: 15%;
+  width: 100%;
+  margin-left: 0%;
+}
+
+@media only screen and (min-width: 750px) {
+  .moduleHero.style2 .text-box .btn {
+    width: 50%;
+    margin-left: 15%;
+  }
 }
 
 .moduleSteps-1 .step-box {
@@ -2740,6 +2760,10 @@ section .subtitle {
   background-size: cover;
 }
 
+.moduleDivider-banner.second img {
+  width: 100%;
+}
+
 .moduleEquipes .title {
   text-align: left;
 }
@@ -2841,12 +2865,14 @@ section .subtitle {
 }
 
 .moduleEquipes .loop-equipes .user-one .box-thumb .rectangle {
-  width: 100%;
+  width: calc(100% + 40px);
   height: 80%;
   background: #59B98A;
   position: absolute;
   left: 0;
   z-index: 0;
+  margin-left: -20px;
+  margin-right: -20px;
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
   top: 0;
@@ -2855,6 +2881,9 @@ section .subtitle {
 
 @media only screen and (min-width: 950px) {
   .moduleEquipes .loop-equipes .user-one .box-thumb .rectangle {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     bottom: 0;
     top: auto;
     height: calc(100% - 95px);
@@ -2958,6 +2987,7 @@ section .subtitle {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -2967,6 +2997,7 @@ section .subtitle {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-bottom: 0;
   }
 }
 
