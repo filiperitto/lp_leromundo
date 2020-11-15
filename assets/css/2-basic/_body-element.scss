@@ -234,12 +234,13 @@ h1{
     font-family: Oxygen;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 40px;
     letter-spacing: 0px;
     text-align: left;
     
     @include respond-to-min(750){
         font-size: 58px;
+        line-height: 64px;
     }
 }
 
