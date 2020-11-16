@@ -3152,7 +3152,7 @@ section .subtitle {
   width: 100%;
 }
 
-.moduleAbout .wrapper-video button {
+.moduleAbout .wrapper-video .cta-videoAbout {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -3161,7 +3161,7 @@ section .subtitle {
   cursor: pointer;
 }
 
-.moduleAbout .wrapper-video button svg {
+.moduleAbout .wrapper-video .cta-videoAbout svg {
   width: 120px;
   position: absolute;
   left: 50%;
@@ -3170,7 +3170,7 @@ section .subtitle {
           transform: translate(-50%, -50%);
 }
 
-.moduleAbout .wrapper-video button svg path {
+.moduleAbout .wrapper-video .cta-videoAbout svg path {
   fill: #fff;
 }
 

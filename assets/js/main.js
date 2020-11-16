@@ -24,6 +24,7 @@ for (var i = 0; i < itemNavComponent.length; i++) {
 
 
 //-== modalAbout Toggle
+/*
 function modalAboutToggle() {
     document.getElementById('modalAbout').classList.toggle('open');
     document.getElementById('body').classList.toggle('scrollhidden');
@@ -35,8 +36,13 @@ var modalAboutComponent = document.querySelectorAll('.cta-videoAbout');
 for (var i = 0; i < modalAboutComponent.length; i++) {
     modalAboutComponent[i].addEventListener('click', modalAboutToggle);
 }
+*/
 //======================== /modalAbout Toggle
 
+
+var lightboxInlineIframe = GLightbox({
+    'selector': '.glightbox4'
+});
 
 
 
