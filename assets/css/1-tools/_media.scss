@@ -72,6 +72,11 @@
     @content;
   }
 }
+@mixin respond-to-min-h($point) {
+   @media only screen and (min-height: $point+px){
+    @content;
+  }
+}
 @mixin respond-to-retina() {
    @media only screen and (-webkit-min-device-pixel-ratio: 2){
     @content;

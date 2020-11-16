@@ -358,9 +358,21 @@ section {
     }
 
     &.style2{
-        background: url(../img/bg-hero-sample2.jpg) no-repeat center 25%;
-        height: 720px;
+        background: url(../img/bg-hero-sample2.jpg) no-repeat 11% center;
+        height: 520px;
         padding-top: 120px;
+        @include respond-to-min(400){
+            height: 580px;
+        }
+        @include respond-to-min(500){
+            height: 630px;
+        }
+        @include respond-to-min(600){
+            height: 720px;
+        }
+        @include respond-to-min(800){
+            background: url(../img/bg-hero-sample2.jpg) no-repeat center 25%;
+        }
         .text-box{
             img{
                 width: 100%;
@@ -429,10 +441,11 @@ section {
         }
         h4{
             width: 230px;
-            //height: 63px;
+            height: 63px;
             font-family: Roboto Condensed;
             font-size: 24px;
             font-style: normal;
+            
             margin: 22px 0;
             font-weight: 700;
             line-height: 32px;
@@ -557,6 +570,7 @@ section {
             letter-spacing: 0px;
             text-align: left;
             margin: 0;
+            text-transform: uppercase;
 
         }
         p{
@@ -1246,9 +1260,11 @@ footer{
         }
         .text-box{
             width: 100%;
+            padding-bottom: 30px;
             @include respond-to-min(750){
                 width: 60%;
                 padding-right: 30px;
+                padding-bottom: 0px;
             }
             h2{
                 color: #fff;
@@ -1283,11 +1299,28 @@ footer{
                 font-weight: 400;
                 
             }
+            .soci{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                a{
+                    padding: 5px 5px 5px 0;
+                    display: block;
+                    margin-right: 15px;
+                }
+            }
         }
         .form-box{
             width: 100%;
             @include respond-to-min(750){
                 width: 40%;
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
             form{
                 width: 100%;
@@ -1333,8 +1366,49 @@ footer{
                     width: 100%;
                 }
             }
+        }
+        .selos-box-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
+            .col60{
+                width: 100%;
+                @include respond-to-min(750){
+                    width: 60%;
+                    padding: 0;
+                }
+                span{
+                    color: #fff;
+                    font-family: 'Roboto Condensed';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 32px;
+                    letter-spacing: 3px;
+                    text-align: left;
+                    text-transform: uppercase;
+                    margin-bottom: 5px;
+                    display: block;
+
+                }
+                .selos{
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+            }
+            
             .selos-box{
+                width: 100%;
+
+                @include respond-to-min(750){
+                    width: 40%;
+                }
                 display: flex;
                 .col50{
                     display: flex;
