@@ -802,6 +802,7 @@ section {
                 }
                 .text-box{
                     padding: 30px 40px 0;
+
                     @include respond-to-min(950){
                         padding: 40px;
                     }
@@ -809,6 +810,27 @@ section {
                     h2{
                         color: #fff;
                         margin: 0;
+                    }
+                    h5{
+
+                        font-family: 'Roboto Condensed';
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: 3px;
+                        text-align: left;
+                        text-transform: uppercase;
+
+                    }
+                    h2{
+                        font-family: 'Poppins';
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 0px;
+                        text-align: left;
+                        text-transform: uppercase;
+
                     }
                 }
                 .rectangle{
