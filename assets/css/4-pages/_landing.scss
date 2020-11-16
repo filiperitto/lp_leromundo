@@ -122,22 +122,25 @@
 
     &.green{
         background: #59B98A;
-        &:before{
-            color: #fff;
+        svg{
+            path{
+                fill: #fff;
+            }
         }
     }
 }
 .glider-next{
-    &:before{
-        content: '▸';
-        color: #59B98A;
+    svg{
+        path{
+            fill: $green;
+        }
     }
 }
 .glider-prev{
-    &:before{
-        content: '◂';
-        color: #59B98A;
-        left: 4px;
+    svg{
+        path{
+            fill: $green;
+        }
     }
 }
 .glider-dots{
@@ -407,6 +410,9 @@ section {
 
 //== Steps Section ::::
 .moduleSteps-1{
+    .title{
+        margin: 0;
+    }
     .step-box{
         width: 100%;
         display: flex;
@@ -580,6 +586,8 @@ section {
                 width: 30%;
                 order: 1;
                 margin-top: 0;
+                justify-content: flex-start;
+                padding-left: 15px;
             }
         }
         .dots-box{
@@ -600,6 +608,9 @@ section {
             justify-content: flex-end;
             align-items: center;
             order: 2;
+            @include respond-to-min(750){
+                padding-right: 15px;
+            }
             .glider-next,
             .glider-prev{
                 position: relative;
@@ -747,6 +758,12 @@ section {
                         }
                     }
                 }
+                
+                .text-column{
+                    @include respond-to-min(950){
+                        padding-right: 20px;
+                    }
+                }
             }
             .box-thumb{
                 width: 100%;
@@ -854,7 +871,7 @@ section {
         }
         .btn{
             width: 250px;
-            margin: auto;
+            //margin: auto;
         }
     }
 }
