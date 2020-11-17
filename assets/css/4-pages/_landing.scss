@@ -798,13 +798,15 @@ section {
                 img{
                     position: relative;
                     z-index: 1;
-                    width: 50%;
+                    width: 100%;
                     margin-top: 10px;
                 }
                 .text-box{
                     padding: 30px 40px 0;
+                    width: 100%;
 
                     @include respond-to-min(950){
+                        width: 50%;
                         padding: 40px;
                     }
                     h5,
@@ -833,6 +835,9 @@ section {
                         text-transform: uppercase;
 
                     }
+                }
+                img{
+                    width: 50%;
                 }
                 .rectangle{
                     width: calc(100% + 40px);

@@ -2962,16 +2962,18 @@ section .subtitle {
 .moduleEquipes .loop-equipes .user-one .box-thumb img {
   position: relative;
   z-index: 1;
-  width: 50%;
+  width: 100%;
   margin-top: 10px;
 }
 
 .moduleEquipes .loop-equipes .user-one .box-thumb .text-box {
   padding: 30px 40px 0;
+  width: 100%;
 }
 
 @media only screen and (min-width: 950px) {
   .moduleEquipes .loop-equipes .user-one .box-thumb .text-box {
+    width: 50%;
     padding: 40px;
   }
 }
@@ -3000,6 +3002,10 @@ section .subtitle {
   letter-spacing: 0px;
   text-align: left;
   text-transform: uppercase;
+}
+
+.moduleEquipes .loop-equipes .user-one .box-thumb img {
+  width: 50%;
 }
 
 .moduleEquipes .loop-equipes .user-one .box-thumb .rectangle {
