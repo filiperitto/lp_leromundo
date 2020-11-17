@@ -808,7 +808,6 @@ body {
   width: 100%;
   max-width: 1360px;
   max-width: 1160px;
-  max-width: 1250px;
   height: auto;
   margin: 0 auto;
   padding-left: 30px;
@@ -3056,8 +3055,8 @@ section .subtitle {
 }
 
 .moduleEquipes .loop-equipes .user-one .text-column p {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .moduleEquipes .btn-box {
