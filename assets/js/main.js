@@ -119,7 +119,7 @@ new Glider(document.querySelector('.glider-reviews'), {
         breakpoint: 750,
         settings: {
             // Set to `auto` and provide item width to adjust to viewport
-            slidesToShow: 1,
+            slidesToShow: 2,
         }
     }]
 });
