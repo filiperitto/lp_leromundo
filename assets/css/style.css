@@ -2123,10 +2123,7 @@ MENU HAMBUGER ANIMATION
   fill: #fff;
 }
 
-.glider-next svg path {
-  fill: #59B98A;
-}
-
+.glider-next svg path,
 .glider-prev svg path {
   fill: #59B98A;
 }
