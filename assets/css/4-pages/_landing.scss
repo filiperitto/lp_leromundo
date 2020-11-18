@@ -376,9 +376,10 @@ section {
     &.style2{
         background: url(../img/bg-hero-sample2.jpg) no-repeat 18% center;
         height: auto;
-        padding-top: 120px;
+        padding-top: 92px;
         padding-bottom: 70px;
         @include respond-to-min(800){
+            padding-top: 120px;
             background: url(../img/bg-hero-sample2.jpg) no-repeat center 25%;
         }
         .text-box{
