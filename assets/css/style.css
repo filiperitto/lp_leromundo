@@ -2409,12 +2409,13 @@ section .subtitle {
   background: url(../img/bg-hero-sample2.jpg) no-repeat 18% center;
   height: auto;
   padding-top: 92px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 @media only screen and (min-width: 800px) {
   .moduleHero.style2 {
     padding-top: 120px;
+    padding-bottom: 70px;
     background: url(../img/bg-hero-sample2.jpg) no-repeat center 25%;
   }
 }
