@@ -4,8 +4,10 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    //scroll-behavior: smooth;   
-    overflow-x: hidden;
+    //scroll-behavior: smooth;  
+    @include respond-to-max(750){ 
+        overflow-x: hidden;
+    }
 }
 
 ::-moz-selection {
