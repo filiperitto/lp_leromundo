@@ -2814,6 +2814,10 @@ section .subtitle {
   }
 }
 
+.moduleSteps-1 .btn-wrap {
+  padding: 0 20px;
+}
+
 .moduleCards {
   background: #379FDD;
 }
