@@ -1513,6 +1513,9 @@ section {
         h1{
             color: #fff;
             margin-top: 0;
+            @include respond-to-max(600){
+                height: 80px;
+            }
         }
         p{
             color: #fff;
@@ -1524,12 +1527,19 @@ section {
             letter-spacing: 3px;
             text-align: left;
             text-transform: uppercase;
+            @include respond-to-max(600){
+                height: 32px;
+            }
         }
         .box-btn-glider{
             display: flex;
             height: 100%;
             align-items: flex-end;
             justify-content: flex-end;
+            @include respond-to-max(600){
+                height: 60px;
+                align-items: baseline;
+            }
             @include respond-to-min(750){
                 justify-content: flex-start;
             }
