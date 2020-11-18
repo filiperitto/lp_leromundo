@@ -3993,6 +3993,7 @@ section .subtitle {
   height: 80px;
   overflow: hidden;
   border-radius: 50px;
+  display: none;
 }
 
 .moduleReviewsCards .slider-box .item-box .header .thumb-wrap img {
@@ -4000,7 +4001,6 @@ section .subtitle {
 }
 
 .moduleReviewsCards .slider-box .item-box .header .text-header {
-  padding-left: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4114,6 +4114,8 @@ section .subtitle {
 .moduleFaq .accordion .acc-heading svg {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .moduleFaq .accordion .acc-heading.active {
