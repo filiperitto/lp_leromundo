@@ -748,6 +748,7 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -2405,7 +2406,7 @@ section .subtitle {
 }
 
 .moduleHero.style2 {
-  background: url(../img/bg-hero-sample2.jpg) no-repeat 11% center;
+  background: url(../img/bg-hero-sample2.jpg) no-repeat 18% center;
   height: auto;
   padding-top: 120px;
   padding-bottom: 70px;
@@ -2492,6 +2493,16 @@ section .subtitle {
 @media only screen and (min-width: 750px) {
   .moduleHero.style2 .text-box .btn {
     width: 100%;
+  }
+}
+
+.moduleHero.style2 .fix-hero {
+  margin-top: -80px;
+}
+
+@media only screen and (min-width: 800px) {
+  .moduleHero.style2 .fix-hero {
+    margin-top: 0;
   }
 }
 
@@ -3503,6 +3514,7 @@ section .subtitle {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+  margin-top: 80px;
 }
 
 @media only screen and (min-width: 750px) {
@@ -3511,6 +3523,7 @@ section .subtitle {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-top: 0;
   }
 }
 

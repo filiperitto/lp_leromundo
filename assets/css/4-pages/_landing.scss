@@ -374,7 +374,7 @@ section {
     }
 
     &.style2{
-        background: url(../img/bg-hero-sample2.jpg) no-repeat 11% center;
+        background: url(../img/bg-hero-sample2.jpg) no-repeat 18% center;
         height: auto;
         padding-top: 120px;
         padding-bottom: 70px;
@@ -463,6 +463,13 @@ section {
         }
         .mask{
             
+        }
+
+        .fix-hero{
+            margin-top: -80px;
+            @include respond-to-min(800){
+                margin-top: 0;
+            }
         }
     }
     
@@ -1228,9 +1235,11 @@ section {
     .video-box{
         width: 100%;
         order: 2;
+        margin-top: 80px;
         @include respond-to-min(750){
             width: 40%;
             order: 1;
+            margin-top: 0;
         }
     }
     .text-box{
