@@ -1730,6 +1730,10 @@ footer{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-direction: column;
+                @include respond-to-min(750){
+                    flex-direction: row;
+                }
                 .btn{
                     width: 100%;
                     @include respond-to-min(750){
