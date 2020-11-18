@@ -2548,6 +2548,11 @@ section .subtitle {
   width: 100%;
 }
 
+.moduleSteps-2 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .moduleSteps-2 .title {
   margin: 0;
 }
@@ -3060,6 +3065,10 @@ section .subtitle {
   margin-top: 30px;
 }
 
+.moduleEquipes {
+  padding-bottom: 0;
+}
+
 .moduleEquipes .title {
   text-align: left;
   -webkit-box-pack: start;
@@ -3082,13 +3091,19 @@ section .subtitle {
   padding-top: 80px;
 }
 
+@media only screen and (min-width: 950px) {
+  .moduleEquipes .loop-equipes {
+    padding-top: 0;
+  }
+}
+
 .moduleEquipes .loop-equipes .user-one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 50px;
+  padding-bottom: 0;
 }
 
 .moduleEquipes .loop-equipes .user-one:nth-child(even) {
@@ -3096,6 +3111,7 @@ section .subtitle {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  padding-bottom: 50px;
 }
 
 .moduleEquipes .loop-equipes .user-one:nth-child(even) .box-thumb .rectangle {
@@ -3260,7 +3276,7 @@ section .subtitle {
 }
 
 .moduleImgText {
-  padding: 20px 0;
+  padding: 20px 0 40px;
 }
 
 .moduleImgText .img-box {
