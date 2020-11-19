@@ -189,3 +189,29 @@ modalSample[i].addEventListener('click', modalSampleToggle);
         
 new ClipboardJS('.btn-copy');
 
+/* Delay visual feedback for invalid form items
+ until initial submit or blur event */
+ Array.from(document.querySelectorAll('.Form input')).forEach(i => {
+    i.addEventListener('invalid', () => {
+      i.dataset.touched = true
+    })
+    i.addEventListener('blur', () => {
+      if (i.value !== '') i.dataset.touched = true
+    })
+  })
+        
+
+  //== Modal formulario Toggle
+  function modalSample1Toggle() {
+      document.getElementById('modalSample1').classList.toggle('open');
+      document.getElementById('inv-modal1').classList.toggle('open');
+      document.getElementById('body').classList.toggle('scrollhidden');
+  }
+  // Select all the elements with example class.
+  var modalSample1 = document.querySelectorAll('.modalcta1');
+  // Loop through the elements.
+  for (var i = 0; i < modalSample1.length; i++) {
+  // Add the class margin to the individual elements.
+  modalSample1[i].addEventListener('click', modalSample1Toggle);
+  }
+  //------------------------ Modal formulario
