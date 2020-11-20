@@ -4785,7 +4785,7 @@ footer .copy-box ul li a {
   text-align: center;
   margin-top: 0;
   margin-bottom: 25px;
-  font-weight: bold;
+  font-weight: 900;
   font-family: 'Lato';
   text-align: center;
 }
@@ -4808,6 +4808,8 @@ footer .copy-box ul li a {
   font-style: normal;
   font-weight: 400;
   text-align: center;
+  text-transform: none;
+  line-height: 22px;
 }
 
 @media only screen and (min-width: 750px) {
