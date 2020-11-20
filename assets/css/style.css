@@ -2265,6 +2265,7 @@ MENU HAMBUGER ANIMATION
   font-size: 13px;
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -2310,6 +2311,166 @@ MENU HAMBUGER ANIMATION
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 15px;
+}
+
+.modalBox .modal-container form {
+  width: 100%;
+  height: auto;
+  border-radius: 22px;
+}
+
+@media only screen and (max-width: 750px) {
+  .modalBox .modal-container form {
+    margin-bottom: 35px;
+  }
+}
+
+.modalBox .modal-container form .header-form {
+  width: 100%;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.modalBox .modal-container form .header-form h3 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.modalBox .modal-container form .form_cont {
+  width: 100%;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 30px;
+}
+
+.modalBox .modal-container form .form_cont label {
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap {
+  position: relative;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input {
+  width: 100%;
+  background: #ffffff;
+  border: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #818A91;
+  outline: none;
+  padding: 10px 20px 10px 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  color: #818A91;
+  min-width: 220px;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .modalBox .modal-container form .form_cont .input-wrap input {
+    min-width: 400px;
+  }
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input::-webkit-input-placeholder {
+  color: #585858;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input:-ms-input-placeholder {
+  color: #585858;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input::-ms-input-placeholder {
+  color: #585858;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input::placeholder {
+  color: #585858;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input:valid {
+  border-color: #59B98A;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input:valid ~ .svg-valid {
+  opacity: 1;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input[data-touched]:invalid {
+  border-color: #FF443E;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap input[data-touched]:invalid ~ .svg-error {
+  opacity: 1;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap::after {
+  position: absolute;
+  content: '';
+  color: transparent;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap:focus-within::after {
+  width: 100%;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap .svg-error {
+  position: absolute;
+  width: 14px;
+  top: 14px;
+  right: 8px;
+  opacity: 0;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap .svg-error path {
+  fill: #FF443E;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap .svg-valid {
+  position: absolute;
+  width: 14px;
+  top: 16px;
+  right: 8px;
+  opacity: 0;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap .svg-valid path {
+  fill: #59B98A;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap.error .svg-error {
+  opacity: 1;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap.valid .svg-valid {
+  opacity: 1;
+}
+
+.modalBox .modal-container form .form_cont span {
+  font-size: 16px;
+  color: #ffffff;
+  width: 85%;
+  padding: 10px 0;
 }
 
 header {
@@ -4675,5 +4836,119 @@ footer .copy-box ul li a {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.confirmacaoPage header .wrap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.confirmacaoPage .moduleHero.style2 {
+  height: 100%;
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 750px) {
+  .confirmacaoPage .moduleHero.style2 {
+    position: relative;
+    height: 100vh;
+  }
+}
+
+.confirmacaoPage .moduleHero.style2 .text-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.confirmacaoPage .moduleHero.style2 .text-box h1 {
+  color: #383838;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: 'Lato';
+  font-weight: 900;
+  text-align: center;
+  text-transform: none;
+}
+
+@media only screen and (min-width: 750px) {
+  .confirmacaoPage .moduleHero.style2 .text-box h1 {
+    font-size: 59px;
+    margin-bottom: 40px;
+  }
+}
+
+.confirmacaoPage .moduleHero.style2 .text-box h2 {
+  font-size: 18px;
+  color: #383838;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 900;
+  font-family: 'Lato';
+  text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+  .confirmacaoPage .moduleHero.style2 .text-box h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+.confirmacaoPage .moduleHero.style2 .text-box p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-family: 'Lato';
+  color: #383838;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  line-height: 22px;
+}
+
+@media only screen and (min-width: 750px) {
+  .confirmacaoPage .moduleHero.style2 .text-box p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.confirmacaoPage .moduleHero.style2 .text-box .btn-wrap {
+  max-width: 376px;
+}
+
+.confirmacaoPage .moduleHero .mask {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 232, 224, 0.86)), to(rgba(170, 213, 230, 0.9)));
+  background: linear-gradient(180deg, rgba(255, 232, 224, 0.86) 0%, rgba(170, 213, 230, 0.9) 100%);
 }
 /*# sourceMappingURL=style.css.map */
