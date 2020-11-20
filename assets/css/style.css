@@ -2254,6 +2254,8 @@ MENU HAMBUGER ANIMATION
   padding: 35px 50px;
   position: relative;
   z-index: 2;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 
 .modalBox .modal-container .wrap {
