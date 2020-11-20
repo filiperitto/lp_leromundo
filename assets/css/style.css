@@ -2363,7 +2363,8 @@ MENU HAMBUGER ANIMATION
   position: relative;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"],
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"] {
   width: 100%;
   background: #ffffff;
   border: 0;
@@ -2380,40 +2381,49 @@ MENU HAMBUGER ANIMATION
 }
 
 @media only screen and (min-width: 750px) {
-  .modalBox .modal-container form .form_cont .input-wrap input {
+  .modalBox .modal-container form .form_cont .input-wrap input[type="text"],
+  .modalBox .modal-container form .form_cont .input-wrap input[type="email"] {
     min-width: 400px;
   }
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input::-webkit-input-placeholder {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]::-webkit-input-placeholder,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]::-webkit-input-placeholder {
   color: #585858;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input:-ms-input-placeholder {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]:-ms-input-placeholder,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]:-ms-input-placeholder {
   color: #585858;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input::-ms-input-placeholder {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]::-ms-input-placeholder,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]::-ms-input-placeholder {
   color: #585858;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input::placeholder {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]::placeholder,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]::placeholder {
   color: #585858;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input:valid {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]:valid,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]:valid {
   border-color: #59B98A;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input:valid ~ .svg-valid {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"]:valid ~ .svg-valid,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"]:valid ~ .svg-valid {
   opacity: 1;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input[data-touched]:invalid {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"][data-touched]:invalid,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"][data-touched]:invalid {
   border-color: #FF443E;
 }
 
-.modalBox .modal-container form .form_cont .input-wrap input[data-touched]:invalid ~ .svg-error {
+.modalBox .modal-container form .form_cont .input-wrap input[type="text"][data-touched]:invalid ~ .svg-error,
+.modalBox .modal-container form .form_cont .input-wrap input[type="email"][data-touched]:invalid ~ .svg-error {
   opacity: 1;
 }
 
@@ -2428,10 +2438,6 @@ MENU HAMBUGER ANIMATION
   bottom: 0;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-}
-
-.modalBox .modal-container form .form_cont .input-wrap:focus-within::after {
-  width: 100%;
 }
 
 .modalBox .modal-container form .form_cont .input-wrap .svg-error {
@@ -2464,6 +2470,11 @@ MENU HAMBUGER ANIMATION
 
 .modalBox .modal-container form .form_cont .input-wrap.valid .svg-valid {
   opacity: 1;
+}
+
+.modalBox .modal-container form .form_cont .input-wrap.checkbox label a {
+  color: #59B98A;
+  text-decoration: underline;
 }
 
 .modalBox .modal-container form .form_cont span {

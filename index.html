@@ -45,23 +45,33 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Script para gerar searchbox na pesquisa do google https://developers.google.com/search/docs/guides/sd-policies#nesting
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "WebSite",
-          "url": "https://www.example.com/",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://query.example.com/search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        }
-    </script> -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NXTZZBJ');
+    </script>
+    <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="body">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXTZZBJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -124,7 +134,13 @@
                         <div class="form_cont">
                             <label>Nivel de Escolaridade</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Nivel de Escolariodade" required>
+                                <input type="text" placeholder="Nivel de Escolariodade">
+                            </div>
+                        </div>
+                        <div class="form_cont">
+                            <div class="input-wrap checkbox">
+                                <input type="checkbox" id="aceito" name="aceito"  required>
+                                <label for="scales">Aceito os <a href="javascript:void(0)">Termos de Uso</a> e as <a href="javascript:void(0)">Politicas de Privacidade</a></label>
                             </div>
                         </div>
 
