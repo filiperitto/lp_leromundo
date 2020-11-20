@@ -2489,12 +2489,52 @@ header .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header .wrap-mobile-menu {
+  display: none;
+}
+
+header .image-menu {
+  height: 30px;
+  width: 30px;
+}
+
+header .content-menu {
+  background: #fff;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  top: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 2rem;
+  margin-top: 20px;
+  opacity: 0;
+}
+
+header .content-menu a {
+  color: #303030;
+}
+
+header .content-menu p {
+  font-size: 2rem;
+  color: #303030;
+  margin: 40px 0;
 }
 
 header .logo {
@@ -2593,6 +2633,19 @@ header.active .hamb span {
 
 header.open nav {
   right: 0;
+}
+
+@media (max-width: 1100px) {
+  header .wrap-mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 section {
@@ -4718,6 +4771,71 @@ footer .copy-box ul li {
 
 footer .copy-box ul li a {
   color: #fff;
+}
+
+.mainMenu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  width: 45%;
+  margin-left: 30px;
+}
+
+.mainMenu div {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  background: #FFF;
+  padding: 0.5rem 0.2rem;
+  opacity: 0.9;
+  max-width: 150px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.mainMenu div:first-child {
+  border-radius: 7px 0 0 7px;
+}
+
+.mainMenu div:last-child {
+  border: none;
+  border-radius: 0 7px 7px 0;
+}
+
+.mainMenu div:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.mainMenu a {
+  color: #303030;
+}
+
+.mainMenu p {
+  font-size: 1rem;
+  margin: 0 0.4rem;
+  color: #303030;
+  font-family: 'Oxygen';
+}
+
+@media (min-width: 1100px) {
+  .mainMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .confirmacaoPage header .wrap {
