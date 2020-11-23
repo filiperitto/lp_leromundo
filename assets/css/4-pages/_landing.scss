@@ -250,6 +250,11 @@
                 &:last-child{
                     margin-right: 0;
                 }
+                &.whats{
+                    @include respond-to-min(750){
+                        display: none;
+                    }
+                }
             }
         }
         .copy-link-box{
