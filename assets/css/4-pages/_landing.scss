@@ -2049,6 +2049,7 @@ footer{
 
                 @include respond-to-min(750){
                     width: 40%;
+                    margin-top: -244px;
                 }
                 display: flex;
                 .col50{
