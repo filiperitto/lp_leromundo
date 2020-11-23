@@ -2287,6 +2287,12 @@ MENU HAMBUGER ANIMATION
   margin-right: 0;
 }
 
+@media only screen and (min-width: 750px) {
+  .modalBox .modal-container .socials a.whats {
+    display: none;
+  }
+}
+
 .modalBox .modal-container .copy-link-box {
   width: 100%;
 }
@@ -4623,6 +4629,7 @@ footer .footer-container .selos-box-container .selos-box {
 @media only screen and (min-width: 750px) {
   footer .footer-container .selos-box-container .selos-box {
     width: 40%;
+    margin-top: -244px;
   }
 }
 
