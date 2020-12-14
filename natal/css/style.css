@@ -4948,6 +4948,8 @@ footer .copy-box ul li a {
 }
 
 .confirmacaoPage .moduleHero.style2 {
+  background: url(../imgs/bg-hero-sample-conf.jpg) no-repeat top center;
+  background-size: cover;
   height: 100%;
   position: absolute;
   padding-top: 0;
