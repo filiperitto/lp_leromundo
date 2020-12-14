@@ -4529,6 +4529,8 @@ section .subtitle {
   display: inline;
   color: #606060;
   cursor: auto;
+  margin: 0;
+  display: initial;
 }
 
 .moduleFaq .btn-box {
