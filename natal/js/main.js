@@ -135,7 +135,7 @@ let singleMode = true;
 
 for( let j=0; j<accContent.length; j++ ){
     let realHeight = accContent[j].offsetHeight;
-    accContent[j].setAttribute("data-height", "calc(" + realHeight + "px + 10px)");
+    accContent[j].setAttribute("data-height", "calc(" + realHeight + "px + 26px)");
     accContent[j].style.height = 0;
 }
 
