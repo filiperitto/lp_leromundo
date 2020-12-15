@@ -4978,7 +4978,7 @@ footer .copy-box ul li a {
 }
 
 .confirmacaoPage .moduleHero.style2 {
-  background: url(../imgs/bg-hero-sample-conf.jpg) no-repeat top center;
+  background: url(../imgs/bg-hero-sample2.jpg) no-repeat top center;
   background-size: cover;
   height: 100%;
   position: absolute;
@@ -5023,6 +5023,7 @@ footer .copy-box ul li a {
   font-weight: 900;
   text-align: center;
   text-transform: none;
+  color: #fff;
 }
 
 @media only screen and (min-width: 750px) {
@@ -5041,6 +5042,7 @@ footer .copy-box ul li a {
   font-weight: 900;
   font-family: 'Lato';
   text-align: center;
+  color: #fff;
 }
 
 @media only screen and (min-width: 750px) {
@@ -5058,6 +5060,7 @@ footer .copy-box ul li a {
   font-weight: 400;
   font-family: 'Lato';
   color: #383838;
+  color: #fff;
   font-style: normal;
   font-weight: 400;
   text-align: center;
@@ -5082,7 +5085,7 @@ footer .copy-box ul li a {
   top: 0;
   right: 0;
   margin: 0;
-  opacity: 1;
+  opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 232, 224, 0.86)), to(rgba(170, 213, 230, 0.9)));
   background: linear-gradient(180deg, rgba(255, 232, 224, 0.86) 0%, rgba(170, 213, 230, 0.9) 100%);
 }
