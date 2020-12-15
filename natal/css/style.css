@@ -2268,6 +2268,34 @@ MENU HAMBUGER ANIMATION
   z-index: 2;
 }
 
+.modalBox .modal-container .close {
+  position: absolute;
+  top: 22px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+  color: #fff;
+  padding: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media only screen and (min-width: 750px) {
+  .modalBox .modal-container .close {
+    right: 35px;
+  }
+}
+
 .modalBox .modal-container .wrap {
   padding: 0;
 }
