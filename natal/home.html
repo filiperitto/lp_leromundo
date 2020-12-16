@@ -22,7 +22,7 @@
     <meta property="og:title" content="Ler o Mundo">
     <meta property="og:site_name" content="Ler o Mundo">
     <meta property="og:description" content="">
-    <meta property="og:image" content="./imgs/placeholder-facebook-meta.jpg">
+    <meta property="og:image" content="imgs/placeholder-facebook-meta.jpg">
     <meta property="og:type" content="website">
 
     <!-- Meta para Publicação do Twitter -->
@@ -30,14 +30,14 @@
     <meta name="twitter:title" content="Ler o Mundo">
     <meta name="twitter:description" content="">
     <meta name="twitter:url" content="">
-    <meta name="twitter:image" content="./imgs/placeholder-facebook-meta.jpg">
+    <meta name="twitter:image" content="imgs/placeholder-facebook-meta.jpg">
     <meta name="twitter:card" content="summary">
 
 
     <link rel="canonical" href="" /> <!-- Tag exclusiva da Home -->
-    <link rel="icon" type="image/png" sizes="192x192" href="./imgs/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./imgs/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="imgs/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
 
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="preload" href="./js/main.js" as="script">
@@ -80,7 +80,7 @@
     <header id="header-main" class="clearfix">
         <div class="wrap">
 
-            <a href="./estado=navega&pg=home" class="logo"><img src="./imgs/svg/logo.svg"></a>
+            <a href="./page=navega&pg=home" class="logo"><img src="imgs/svg/logo.svg"></a>
 
         </div>
     </header>
@@ -94,7 +94,12 @@
                 <div class="wrap">
                     <h3>Cadastro:</h3>
                     
-                    <form id="black" class="Form">
+                    <form id="black" class="Form" action="index.php" method="POST">
+                        <input type='hidden' name='page' value='navega'>
+                        <input type='hidden' name='pg' value='confirmacao_lead'> 
+                        <input type='hidden' name='cadastro' value='1'>
+                        <input type='hidden' name='origem' value='##ORIGEM##'>
+                        <input type='hidden' name='id_tipo_assinatura' value='##ID_TIPO_ASSINATURA##'>
                         <div class="form_cont">
                             <label>Email*</label>
                             <div class="input-wrap" id="result">
@@ -106,7 +111,7 @@
                         <div class="form_cont">
                             <label>Nome*</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Nome" required>
+                                <input type="text" id="nome" placeholder="Nome" required>
                                 <svg class="svg-valid" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
                                 <svg class="svg-error" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                             </div>
@@ -114,7 +119,7 @@
                         <div class="form_cont">
                             <label>Idade*</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Idade" required>
+                                <input type="text" id="idade" placeholder="Idade" required>
                                 <svg class="svg-valid" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
                                 <svg class="svg-error" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                             </div>
@@ -122,7 +127,7 @@
                         <div class="form_cont">
                             <label>Cidade*</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Cidade" required>
+                                <input type="text" id="cidade" placeholder="Cidade" required>
                                 <svg class="svg-valid" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
                                 <svg class="svg-error" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                             </div>
@@ -130,7 +135,7 @@
                         <div class="form_cont">
                             <label>Estado*</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Estado" required>
+                                <input type="text" id="estado" placeholder="Estado" required>
                                 <svg class="svg-valid" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
                                 <svg class="svg-error" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
                             </div>
@@ -138,13 +143,13 @@
                         <div class="form_cont">
                             <label>Nivel de Escolaridade</label>
                             <div class="input-wrap">
-                                <input type="text" placeholder="Nivel de Escolariodade">
+                                <input type="text" id="escolaridade" placeholder="Nivel de Escolariodade">
                             </div>
                         </div>
                         <div class="form_cont">
                             <div class="input-wrap checkbox">
                                 <input type="checkbox" id="aceito" name="aceito"  required>
-                                <label for="scales">Aceito os <a href="termos_e_politicas.html">Termos de Uso</a> e as <a href="termos_e_politicas.html">Politicas de Privacidade</a></label>
+                                <label for="scales">Aceito os <a href="./page=navega&pg=hometermos_e_politicas">Termos de Uso</a> e as <a href="./page=navega&pg=hometermos_e_politicas">Politicas de Privacidade</a></label>
                             </div>
                         </div>
 
@@ -163,14 +168,14 @@
 
         <section id="hero" class="moduleHero style2">
             <div class="selo-timer">
-                <img alt="" src="./imgs/grapich-bf.svg">
+                <img alt="" src="imgs/grapich-bf.svg">
             </div>
             <div class="wrap grid fix-hero">
                 <div class="text-box">
                     <img alt="" src="imgs/img-hero.png">
                     <h1 class="hero-title">Descubra a Experiência que <strong> Ensina seu filho a ler.</strong></h1>
                     <div class="btn-wrap">
-                        <a class="btn blue modalcta1">Garantir desconto de Natal!</a>
+                        <a class="btn blue">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                     <span>“Meus filhos detestam fazer lição de casa. Mas quando uso a <strong>Experiência Ler o Mundo</strong>, eles adoram! Nem parece que estamos estudando! Confesso que também adoro!”</span>
@@ -181,7 +186,7 @@
             <div class="wrap grid box-cont">
                 <div class="video-box">
                     <div class="wrapper-video">
-                        <img alt="" src="./imgs/placeholder-video2.jpg" class="placeholder">
+                        <img alt="" src="imgs/placeholder-video2.jpg" class="placeholder">
                         <svg class="ovals-shape1" width="268" height="268" viewBox="0 0 268 268" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -226,7 +231,7 @@
                     </p>
                     
                     <div class="btn-wrap">
-                        <a class="btn modalcta1">Garantir desconto de Natal!</a>
+                        <a class="btn">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -532,7 +537,7 @@
                 </div>
             </div>
             <div class="btn-wrap">
-                <a href="javascript:void(0)" class="btn center-margin modalcta1">Garantir desconto de Natal!</a>
+                <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
                 <span><b>*</b>Vagas Limitadas</span>
             </div>
 
@@ -697,7 +702,7 @@
             </div>
             <div class="wrap grid control-bar">
                 <div class="btn-box btn-wrap">
-                    <a href="javascript:void(0)" class="btn modalcta1">Compre com 30% off</a>
+                    <a href="javascript:void(0)" class="btn">Compre com 30% off</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
                 <div class="dots-box">
@@ -721,10 +726,10 @@
         <section id="divider-banner" class="moduleDivider-banner first">
             <div class="wrap grid">
                 <div class="col50 text-box">
-                    <img alt="" src="./imgs/img-hero.png">
+                    <img alt="" src="imgs/img-hero.png">
                     <h1>de <strike>R$197</strike> <strong>por R$137</strong></h1>
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn blue modalcta1">Garantir Desconto de Natal</a>
+                        <a href="javascript:void(0)" class="btn blue">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -745,7 +750,7 @@
                                 <h2>Bruna<br>
                                     Cardoso</h2>
                             </div>
-                            <img src="./imgs/equipe-placeholder3.png" style="max-width: 405px;">
+                            <img src="imgs/equipe-placeholder3.png" style="max-width: 405px;">
                             <div class="rectangle"></div>
                         </div>
                         <div class="text-column">
@@ -771,7 +776,7 @@
                                 <h2>Paula<br>
                                     Strano</h2>
                             </div>
-                            <img src="./imgs/equipe-placeholder2.png" style="max-width: 410px;">
+                            <img src="imgs/equipe-placeholder2.png" style="max-width: 410px;">
                             <div class="rectangle"></div>
                         </div>
                         <div class="text-column">
@@ -791,7 +796,7 @@
                     </div>
                 </div>
                 <div class="btn-wrap">
-                    <a href="javascript:void(0)" class="btn center-margin modalcta1">Garantir desconto de natal</a>
+                    <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
             </div>
@@ -800,7 +805,7 @@
         <section id="multiPlataforma" class="moduleImgText">
             <div class="wrap grid">
                 <div class="img-box">
-                    <img src="./imgs/multi-img.png">
+                    <img src="imgs/multi-img.png">
                 </div>
                 <div class="text-box">
                     <h1>
@@ -810,7 +815,7 @@
                     </p>
                     
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn modalcta1">Garantir desconto de natal</a>
+                        <a href="javascript:void(0)" class="btn">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -820,10 +825,10 @@
         <section id="divider-banner" class="moduleDivider-banner second">
             <div class="wrap grid">
                 <div class="col50 text-box">
-                    <img alt="" src="./imgs/img-hero.png">
+                    <img alt="" src="imgs/img-hero.png">
                     <h1>de <strike>R$197</strike> <strong>por R$137</strong></h1>
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn blue modalcta1">Garantir Desconto de Natal</a>
+                        <a href="javascript:void(0)" class="btn blue">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -854,7 +859,7 @@
                         <div class="item-box">
                             <div class="header">
                                 <div class="thumb-wrap">
-                                    <img src="./imgs/thumb-rev.png">
+                                    <img src="imgs/thumb-rev.png">
                                 </div>
                                 <div class="text-header">
                                     <h4>Luciana Mendonça</h4>
@@ -875,7 +880,7 @@
                         <div class="item-box">
                             <div class="header">
                                 <div class="thumb-wrap">
-                                    <img src="./imgs/thumb-rev.png">
+                                    <img src="imgs/thumb-rev.png">
                                 </div>
                                 <div class="text-header">
                                     <h4>Carol Hornos</h4>
@@ -923,7 +928,7 @@
                     </svg>
                 </div>
                 <div class="text-box">
-                    <img alt="" src="./imgs/img-hero.png">
+                    <img alt="" src="imgs/img-hero.png">
                     <h1>Vamos Ler o Mundo?</h1>
                     <p>
                         Compre por
@@ -939,7 +944,7 @@
                     <p>e Pague em até 10x de R$13,70</p>
 
                     <div class="btn-wrap">
-                        <a href="javascript:void(0)" class="btn white-blue center-margin modalcta1">comprar agora com 30% de desconto</a>
+                        <a href="javascript:void(0)" class="btn white-blue center-margin">comprar agora com 30% de desconto</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -959,7 +964,7 @@
                                     fill="#EFF9FF" />
                             </svg>
                         </a>
-                        <img src="./imgs/placeholder-video.png" class="placeholder">
+                        <img src="imgs/placeholder-video.png" class="placeholder">
                         <svg class="ovals-shape" width="268" height="268" viewBox="0 0 268 268" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -986,7 +991,7 @@
                     </ul>
                     
                     <div class="btn-wrap">
-                        <a class="btn modalcta1">Garantir desconto de Natal!</a>
+                        <a class="btn">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -1231,7 +1236,7 @@
                 </div><!-- / .accordion -->
 
                 <div class="btn-box btn-wrap">
-                    <a href="javascript:void(0)" class="btn center-margin modalcta1">garantir desconto de natal</a>
+                    <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
                 
@@ -1338,14 +1343,14 @@
                             <div class="col50">
                                 <span>Formas de pagamento:</span>
                                 <ul class="selos">
-                                    <li><img src="./imgs/bandeiras.png"></li>
+                                    <li><img src="imgs/bandeiras.png"></li>
                                 </ul>
                             </div>
                             <div class="col50">
                                 <span>Compre com segurança</span>
                                 
                                 <ul class="selos">
-                                    <li><img src="./imgs/selo-blindado.png"></li>
+                                    <li><img src="imgs/selo-blindado.png"></li>
                                 </ul>
                             </div>
                         </div>
@@ -1359,8 +1364,8 @@
                     <p>Copyright © 2020 Ler o Mundo. All rights reserved.</p>
 
                     <ul>
-                        <li><a href="./estado=navega&pg=termos_e_politicas">Politica de Privacidade</a></li>
-                        <li><a href="./estado=navega&pg=termos_e_politicas">Termos e Condições</a></li>
+                        <li><a href="./page=navega&pg=termos_e_politicas">Politica de Privacidade</a></li>
+                        <li><a href="./page=navega&pg=termos_e_politicas">Termos e Condições</a></li>
                     </ul>
                 </div>
             </div>
