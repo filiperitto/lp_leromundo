@@ -42,7 +42,7 @@
     <link rel="preload" href="./css/style.css" as="style">
     <link rel="preload" href="./js/main.js" as="script">
 
-    <!-- ##INCLUDE_CSS## -->
+    ##INCLUDE_CSS##
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -69,6 +69,7 @@
 </head>
 
 <body id="body">
+    ##INCLUDE_MODAL##
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXTZZBJ" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -175,7 +176,7 @@
                     <img alt="" src="imgs/img-hero.png">
                     <h1 class="hero-title">Descubra a Experiência que <strong> Ensina seu filho a ler.</strong></h1>
                     <div class="btn-wrap">
-                        <a class="btn blue">Compre agora</a>
+                        <a class="btn blue" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                     <span>“Meus filhos detestam fazer lição de casa. Mas quando uso a <strong>Experiência Ler o Mundo</strong>, eles adoram! Nem parece que estamos estudando! Confesso que também adoro!”</span>
@@ -231,7 +232,7 @@
                     </p>
                     
                     <div class="btn-wrap">
-                        <a class="btn">Compre agora</a>
+                        <a class="btn" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -537,7 +538,7 @@
                 </div>
             </div>
             <div class="btn-wrap">
-                <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
+                <a href="javascript:void(0)" class="btn center-margin" onClick="openModal()">Compre agora</a>
                 <span><b>*</b>Vagas Limitadas</span>
             </div>
 
@@ -702,7 +703,7 @@
             </div>
             <div class="wrap grid control-bar">
                 <div class="btn-box btn-wrap">
-                    <a href="javascript:void(0)" class="btn">Compre com 30% off</a>
+                    <a href="javascript:void(0)" class="btn" onClick="openModal()">Compre com 30% off</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
                 <div class="dots-box">
@@ -729,7 +730,7 @@
                     <img alt="" src="imgs/img-hero.png">
                     <h1>de <strike>R$197</strike> <strong>por R$137</strong></h1>
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn blue">Compre agora</a>
+                        <a href="javascript:void(0)" class="btn blue" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -796,7 +797,7 @@
                     </div>
                 </div>
                 <div class="btn-wrap">
-                    <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
+                    <a href="javascript:void(0)" class="btn center-margin" onClick="openModal()">Compre agora</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
             </div>
@@ -815,7 +816,7 @@
                     </p>
                     
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn">Compre agora</a>
+                        <a href="javascript:void(0)" class="btn" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -828,7 +829,7 @@
                     <img alt="" src="imgs/img-hero.png">
                     <h1>de <strike>R$197</strike> <strong>por R$137</strong></h1>
                     <div class="btn-box btn-wrap">
-                        <a href="javascript:void(0)" class="btn blue">Compre agora</a>
+                        <a href="javascript:void(0)" class="btn blue" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -944,7 +945,7 @@
                     <p>e Pague em até 10x de R$13,70</p>
 
                     <div class="btn-wrap">
-                        <a href="javascript:void(0)" class="btn white-blue center-margin">comprar agora com 30% de desconto</a>
+                        <a href="javascript:void(0)" class="btn white-blue center-margin" onClick="openModal()">comprar agora com 30% de desconto</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -991,7 +992,7 @@
                     </ul>
                     
                     <div class="btn-wrap">
-                        <a class="btn">Compre agora</a>
+                        <a class="btn" onClick="openModal()">Compre agora</a>
                         <span><b>*</b>Vagas Limitadas</span>
                     </div>
                 </div>
@@ -1236,7 +1237,7 @@
                 </div><!-- / .accordion -->
 
                 <div class="btn-box btn-wrap">
-                    <a href="javascript:void(0)" class="btn center-margin">Compre agora</a>
+                    <a href="javascript:void(0)" class="btn center-margin" onClick="openModal()">Compre agora</a>
                     <span><b>*</b>Vagas Limitadas</span>
                 </div>
                 
@@ -1373,12 +1374,12 @@
         </footer>
     </div>
 
-    <!-- ##INCLUDE_JS## -->
+    ##INCLUDE_JS##
 
-    <script src="./js/glider.js"></script>
-    <script src="./js/glightbox.min.js"></script>
-    <script src="./js/clipboard.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="js/glider.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/clipboard.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
